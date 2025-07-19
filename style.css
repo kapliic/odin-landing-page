@@ -14,21 +14,21 @@ body {
 .container{
     width: 100%;
     margin: 0;
-    padding: 0 200px;
-    
+    padding: 100px 200px;
+    flex: 1;
 }
 
 .header {
     position: sticky;
     width: 100%;
     margin: 0;
-    padding: 8px 200px;
+    padding: 2px 200px;
     top: 0;
-    height: 72px;
+    height: 75px;
     background: #1F2937;
     color: white;
     display: flex;
-    flex: 1;
+    
     align-items: center;
   }
 
@@ -37,11 +37,44 @@ body {
     background: #1F2937;
     flex: 1;
 }
-  
+
+#products.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#products-heading {
+    margin: auto;
+}
+
+.product-listing {
+    max-width: 180px;
+}
+
+.product-description {
+    text-align: center;
+}
+
+.product-carusel {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.client-reference {
+    display: flex;
+    background-color: grey;
+    flex: 1;
+}
+
+.cta-container {
+    display: flex;
+    flex: 1;
+}
+
 .footer {
     height: 72px;
-    background: #eee;
-    color: darkmagenta;
+    background: #1F2937;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,4 +109,13 @@ ul{
 .product-illustration{
     width: 180px;
     height: auto;
+}
+
+button{
+    background-color: #3882F6;
+    color: #F9FAF8;
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 700px;
 }
