@@ -18,6 +18,18 @@ body {
     flex: 1;
 }
 
+h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 22px;
+}
+
 .header {
     position: sticky;
     width: 100%;
@@ -28,7 +40,7 @@ body {
     background: #1F2937;
     color: white;
     display: flex;
-    
+    row-gap: 10px;
     align-items: center;
   }
 
@@ -38,14 +50,23 @@ body {
     flex: 1;
 }
 
+#hero.container h1 {
+    margin-bottom: 18px;
+}
+
 #products.container {
     display: flex;
     flex-direction: column;
     flex: 1;
+    justify-content: space-evenly;
 }
 
 #products-heading {
     margin: auto;
+    padding-bottom: 80px;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
 }
 
 .product-listing {
@@ -54,6 +75,8 @@ body {
 
 .product-description {
     text-align: center;
+    font-size: 18px;
+    color: #1F2937;
 }
 
 .product-carusel {
@@ -61,15 +84,77 @@ body {
     justify-content: space-evenly;
 }
 
-.client-reference {
+#reference.container {
     display: flex;
-    background-color: grey;
+    flex-direction: column;
     flex: 1;
+    background: #E5E7EB;
 }
 
-.cta-container {
+.client-reference {
     display: flex;
     flex: 1;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1F2937;
+}
+
+.client-signature {
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: auto;
+}
+
+#cta-container {
+    display: flex;
+    justify-content: center;
+    padding: 100px 200px;
+}
+
+.cta-text {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cta-min-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*min-height: 200px; */
+    background: #3882F6;
+    border-radius: 8px;
+    padding: 40px 60px;
+    width: 100%;
+    max-width: 1000px;
+    color: #F9FAF8;
+}
+
+#cta-left {
+    flex: 2;
+}
+
+#cta-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#cta-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F9FAF8;
+    border-radius: 8px;
+    background: transparent;
+    color: #F9FAF8;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    
 }
 
 .footer {
@@ -94,6 +179,7 @@ ul{
     flex-direction: row;
     margin-left: auto;
     gap: 12px;
+    cursor: pointer;
 }
 
 .nav-menu-links, .subtext{
@@ -109,6 +195,7 @@ ul{
 .product-illustration{
     width: 180px;
     height: auto;
+    border-radius: 8px;
 }
 
 button{
@@ -118,4 +205,15 @@ button{
     height: 50px;
     font-size: 18px;
     font-weight: 700px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
 }
+
+button:focus {
+    border: none;
+    outline: none;
+    outline-offset: 2px;
+  }
